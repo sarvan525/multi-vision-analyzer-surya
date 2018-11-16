@@ -54,6 +54,6 @@ app.post('/test', (req, res) => {
 
 });
 
-app.listen(2018, () => {
-	console.log(chalk.green('Listening on port 2018'));
+app.listen(process.env.PORT || 5000, '0.0.0.0', function() {
+  console.log("... port %d in %s mode", app.settings.env);
 });
