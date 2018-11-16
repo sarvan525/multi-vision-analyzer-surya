@@ -1,0 +1,22 @@
+.previewImage {
+	max-width: 350px;
+	max-height: 350px;	
+}
+
+.googleSimilarThumb {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.results {
+    background-color: #efefef;
+    padding: 5px;
+    margin-top: 10px;
+    max-width: 500px;
+    float: left;
+    margin-right: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

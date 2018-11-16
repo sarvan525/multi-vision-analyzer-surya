@@ -1,0 +1,26 @@
+	{
+		"google": {
+  "type": "service_account",
+  "project_id": "eighth-road-221120",
+  "private_key_id": "7bec3857d548827717a1fcff933a276cda64a76d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC4s+wwdz8ihdOi\nLmsUfxefv3avIT3d04JPQUZ+ixpCNZnGGWlROtehbqRhqSe25P3dyfWRt/qyCoY3\n+xHQQ8QqAZcVaRoIp+MTsk8rFHAvLpU9Or4K/FptSv+ObIa7qmMym1eox3jsn4A/\nhwoOj2WuoB+YFGbIFZlfcpms3n3uQs6jQGQO1fOP6EmmALWIIkX2egfYwZYFwSrg\nVge3OyQBGYEqLDnZdX7Rl44DynLDB6FRSY+ElIBTT8P86qYjFjNA4eaguJJ+Eicu\nxALR8BLUyGuSUDlfoxCCv1c/NnQFzNjas94GFd/mEkYG0/Rl0yuR4vSsKhQ+6jOs\nmp4Gz8Y1AgMBAAECggEAG6ESfkeAQr5JI7QU4YqHcqaV7ummkwW+MvPdQzW0tl3F\nRHxtpDCMrAHchh1jKvlDPoek++jNEBAB9uLQTdqtP+lf+9xugAf5MGuWayfSBkTO\nH0wnvIX2Uu4Kn3f9iZoZ36qcKMu5+496hEZDi10JBV+/iiTXISwV9tCyS0k3Bkpn\n1X5pKF8kjhfNTQ35hm24Jw7O6QTN6qd2+5btwuk0dGZd5M5h67XSNyYKBOzx1qbm\n5ePJA/IVJVMx9C21hFgFguw+GF6a81IDOt13iCdpFbWOvmDNyLpSU9uqI6qEUjw5\nLR0+WSOK0hRQL7qMTzSCqsBxrUH/PgkLPhRI3wqyCwKBgQDq8tOfB9q8m1KzXneS\nd7otS7AVeH9kXlQm1ds4pa3FKzar+GnsMhQ9xxHuPeNGYj89dPY3tmJTmkxneE/k\n1CWiSbeiy9FviRK4ia18pTMH3lrLlDiZsfhtBaTgIZ4MoS1fgRFw5egaEsdM4zWS\nlmkUOFWHXQ+aLqwPCqDluDG1NwKBgQDJQJNzyC84ispuAPHZN/zcVq30UBocrFaU\nvtG689zMCa+ktfm/pfNOhCnOVWvzobhG6BkI7LuUXjwpyJKdou57Iuk3eirnoURb\nQlKxAps/B2/slYILJWfQTqKh2qnPANtJ12/BNojUjMwHxkIVkPuOxXZHkfzWojUn\nJkAzV/bV8wKBgQCcMZzQf9dCRfxf9LCHdgMWs9e3HmmKn09QliHscfCpQMZS443/\nkXd1bo+UFB6xHwWt5MD/XsfVjqG2s/xhQ0xVrK5hkyCEBtukRRtJ30WiuIciCkLq\noq9mQzdOLes1uD1C3bprlNyN4OgQTIjEECyBXcY2fH6v4NFQGp/GuIKLVwKBgAER\nkrberUGDmyeSYbZhkbopy6qscjcMwzju+nYfrWB3/LLHNJhL7UrRcNdjpLsadLwL\np3Zgq25SQceHBSBJKTMGMG7W+ztXo+FILOA7v09KXtHGyXX9sNtuT3bEjnpG6uMt\nfa5s97UJOlwgNWGf73YGnmYq5EjPe7DFhzm+kdT5AoGBAK0Rj6epOd8IrmrgidbO\n2LR8yh++Kv0ZegDV+pHltxEUsoO3QbshHMMAuAsR7/1Cs/aAYNsfSF51Gb6gtkMe\n4tlgOFcQ6PdwnsWOtJjL9ETFapk0SPNcUNvEpHLAbYWx72eSa+yKeI2uqjRZoHvv\n28hhGdT0LZPFjl6iy6LteWrj\n-----END PRIVATE KEY-----\n",
+  "client_email": "img-analzer@eighth-road-221120.iam.gserviceaccount.com",
+  "client_id": "100552076038926576779",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/img-analzer%40eighth-road-221120.iam.gserviceaccount.com"
+},
+		"ibm": {
+			"api_key":"nD-uSG6DCQzr_X3dT1saI_HsV6IbTvVgbHnwO1-3FxQ7"
+		},
+		"microsoft": {
+			"url":"https://westcentralus.api.cognitive.microsoft.com/vision/v2.0",
+			"key":"01ae36446f2f43d290b52db4ddc8ee8b"
+		}, 
+		"amazon":{
+			"accessKeyId": "AKIAI2WB5CFJKZN3VCIQ",
+			"secretAccessKey": "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",
+			"region":"us-east-2"
+		}
+	}
