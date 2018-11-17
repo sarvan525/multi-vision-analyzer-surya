@@ -2,6 +2,8 @@ const Vision = require('@google-cloud/vision');
 
 
 function doProcess(path,auth) {
+	
+	console.log(JSON.stringify(auth));
 
 	const visionClient = new Vision.ImageAnnotatorClient({
 		projectId:auth.project_id,
