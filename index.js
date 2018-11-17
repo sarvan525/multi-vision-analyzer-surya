@@ -4,6 +4,7 @@ const chalk = require('chalk');
 const formidable = require('formidable');
 const path = require('path');
 const creds = require('./creds.json');
+const heroku_creds = process.env.creds;
 
 const google = require('./google');
 const ibm = require('./ibm');
@@ -28,10 +29,10 @@ app.post('/test', (req, res) => {
 		now we go through N services
 		*/
 		let services = [];
-		services.push(google.doProcess(theFile, creds.google));
-		services.push(ibm.doProcess(theFile, creds.ibm));
-		services.push(microsoft.doProcess(theFile, creds.microsoft));
-		services.push(amazon.doProcess(theFile, creds.amazon));
+		//services.push(google.doProcess(theFile, creds.google)); 
+		services.push(ibm.doProcess(theFile, creds.ibm || heroku_creds.ibm));
+		//services.push(microsoft.doProcess(theFile, creds.microsoft));
+		//services.push(amazon.doProcess(theFile, creds.amazon));
 
 		Promise.all(services).then((results) => {
 			/*
@@ -55,5 +56,5 @@ app.post('/test', (req, res) => {
 });
 
 app.listen(process.env.PORT || 5000, '0.0.0.0', function() {
-  console.log("... port %d in %s mode", app.settings.env);
+  console.log("... port");
 });
