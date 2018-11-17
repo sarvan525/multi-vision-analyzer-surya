@@ -7,7 +7,7 @@ function doProcess(path,auth) {
 	
 	const visionClient = new Vision.ImageAnnotatorClient({
 		projectId:auth.project_id,
-		credentials:auth
+		credentials:JSON.parse(process.env.google_cred)
 	});
 
 	return new Promise((resolve, reject) => {
