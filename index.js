@@ -4,8 +4,8 @@ const chalk = require('chalk');
 const formidable = require('formidable');
 const path = require('path');
 //const creds = require('./creds.json');
-const heroku_creds = JSON.stringify(process.env.creds);
-console.log(JSON.stringify(process.env.creds));
+const heroku_creds = JSON.parse(process.env.creds);
+console.log('heroku_creds==='+heroku_creds);
 
 
 const google = require('./google');
