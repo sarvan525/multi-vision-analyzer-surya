@@ -34,7 +34,7 @@ app.post('/test', (req, res) => {
 		services.push(google.doProcess(theFile, heroku_creds.google)); 
 		services.push(ibm.doProcess(theFile, heroku_creds.ibm));
 		services.push(microsoft.doProcess(theFile, heroku_creds.microsoft));
-		services.push(amazon.doProcess(theFile, heroku_creds.amazon));
+		//services.push(amazon.doProcess(theFile, heroku_creds.amazon));
 
 		Promise.all(services).then((results) => {
 			/*
