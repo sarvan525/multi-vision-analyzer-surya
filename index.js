@@ -5,7 +5,6 @@ const formidable = require('formidable');
 const path = require('path');
 //const creds = require('./creds.json');
 const heroku_creds = JSON.parse(process.env.creds);
-console.log('heroku_creds==='+ JSON.stringify(heroku_creds));
 
 
 const google = require('./google');
@@ -32,8 +31,8 @@ app.post('/test', (req, res) => {
 		*/
 		let services = [];
 		services.push(google.doProcess(theFile, heroku_creds.google)); 
-		//services.push(ibm.doProcess(theFile, heroku_creds.ibm));
-		//services.push(microsoft.doProcess(theFile, heroku_creds.microsoft));
+		services.push(ibm.doProcess(theFile, heroku_creds.ibm));
+		services.push(microsoft.doProcess(theFile, heroku_creds.microsoft));
 		//services.push(amazon.doProcess(theFile, heroku_creds.amazon));
 
 		Promise.all(services).then((results) => {
@@ -58,5 +57,5 @@ app.post('/test', (req, res) => {
 });
 
 app.listen(process.env.PORT || 5000, '0.0.0.0', function() {
-  console.log("... port");
+  console.log("listening on port 5000 for local and heroku:"+process.env.PORT);
 });
