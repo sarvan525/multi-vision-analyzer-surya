@@ -5,11 +5,9 @@ function doProcess(path,auth) {
 	
 	console.log('auth>>>'+JSON.stringify(auth));
 	
-	var authJSON = JSON.parse(authJSON);
-
 	const visionClient = new Vision.ImageAnnotatorClient({
 		projectId:auth.project_id,
-		credentials:authJSON
+		credentials:auth
 	});
 
 	return new Promise((resolve, reject) => {
