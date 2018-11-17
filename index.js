@@ -4,7 +4,8 @@ const chalk = require('chalk');
 const formidable = require('formidable');
 const path = require('path');
 //const creds = require('./creds.json');
-//const heroku_creds = process.env.creds;
+const heroku_creds = JSON.stringify(process.env.creds);
+
 
 const google = require('./google');
 const ibm = require('./ibm');
@@ -29,10 +30,10 @@ app.post('/test', (req, res) => {
 		now we go through N services
 		*/
 		let services = [];
-		//services.push(google.doProcess(theFile, creds.google)); 
-		services.push(ibm.doProcess(theFile));
-		//services.push(microsoft.doProcess(theFile, creds.microsoft));
-		//services.push(amazon.doProcess(theFile, creds.amazon));
+		services.push(google.doProcess(theFile, heroku_creds.google)); 
+		services.push(ibm.doProcess(theFile, heroku_creds.ibm));
+		services.push(microsoft.doProcess(theFile, heroku_creds.microsoft));
+		services.push(amazon.doProcess(theFile, heroku_creds.amazon));
 
 		Promise.all(services).then((results) => {
 			/*
