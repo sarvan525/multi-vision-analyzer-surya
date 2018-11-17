@@ -1,12 +1,13 @@
 const VisualRecognitionV3 = require("watson-developer-cloud/visual-recognition/v3");
 const fs = require("fs");
 
-function doProcess(path, auth) {
+function doProcess(path) {
 	return new Promise((resolve, reject) => {
 
 		console.log("Attempting IBM recog");
 		let visual_recognition = new VisualRecognitionV3({
-			iam_apikey: auth.api_key,
+			//iam_apikey: auth.api_key,
+			iam_apikey: process.env.api_key,
 			version: '2018-03-19'
 		});
 
