@@ -30,7 +30,7 @@ app.post('/test', (req, res) => {
 		*/
 		let services = [];
 		//services.push(google.doProcess(theFile, creds.google)); 
-		services.push(ibm.doProcess(theFile, creds.ibm || heroku_creds.ibm));
+		services.push(ibm.doProcess(theFile, heroku_creds.ibm));
 		//services.push(microsoft.doProcess(theFile, creds.microsoft));
 		//services.push(amazon.doProcess(theFile, creds.amazon));
 
