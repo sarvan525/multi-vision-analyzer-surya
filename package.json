@@ -19,7 +19,7 @@
   "homepage": "https://github.com/sarvan525/img-analyzer-util/#readme",
   "dependencies": {
     "@google-cloud/vision": "^0.22.1",
-    "aws-sdk": "^2.108.0",
+    "aws-sdk": "^2.814.0",
     "aws-serverless-express": "^3.3.5",
     "azure": "^2.0.0-preview",
     "chalk": "^1.1.3",
